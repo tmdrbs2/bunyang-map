@@ -562,7 +562,7 @@ function saleRow(x,withArea){
 
 function renderOnAll(){   // 전국 첫 화면: 지금 분양중인 단지를 최신 공고순으로 전부
   const on=LIST.filter(x=>x.status==='분양중').sort((a,b)=>String(b.date).localeCompare(String(a.date)));
-  $('onAllList').innerHTML=on.length?on.map(x=>saleRow(x,true)).join(''):'<li class="none">지금 분양중인 단지가 없어요.</li>';
+  $('onAllList').innerHTML=on.length?on.map(x=>saleRow(x,false)).join(''):'<li class="none">지금 분양중인 단지가 없어요.</li>';
 }
 function renderSale(v){
   const mine=LIST.filter(x=>x.area===v.area).sort((a,b)=>String(b.date).localeCompare(String(a.date)));
