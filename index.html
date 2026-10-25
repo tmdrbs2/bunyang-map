@@ -49,13 +49,13 @@ svg[data-view="home"] .labels text{stroke-width:3px}
 .sale h3{font-size:15px;margin:6px 0 0;color:var(--ink)}
 .sale h3:first-child{margin-top:0;color:var(--c5)}
 .sale ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
-.sale li{font-size:14px;line-height:1.5;color:var(--ink);display:flex;align-items:center;gap:10px}
-.sale li .txt{flex:1;min-width:0}
-.sale li .acts{display:flex;gap:6px;flex:none}
-.ib{width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);display:inline-flex;align-items:center;justify-content:center;padding:0;cursor:pointer;text-decoration:none}
-.ib svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.sale li a.ib{border-bottom:1px solid var(--line)}
-.ib:hover,.ib:focus-visible{color:var(--c5);border-color:var(--c5);outline:none}
+.sale li{font-size:14px;line-height:1.9;color:var(--ink)}
+.pillb{display:inline-flex;align-items:center;gap:4px;margin-left:6px;padding:2px 10px 2px 8px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:12px;line-height:1.6;white-space:nowrap;vertical-align:middle;cursor:pointer;text-decoration:none}
+.pillb svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.sale li a.pillb{border-bottom:1px solid var(--c5)}
+.pillb.go{background:var(--c5);border-color:var(--c5);color:#fff}
+.pillb:hover,.pillb:focus-visible{filter:brightness(.94);outline:none}
+.pillb.pv:hover{color:var(--c5);border-color:var(--c5);filter:none}
 .pvbg{position:fixed;inset:0;background:rgba(14,19,27,.55);display:flex;align-items:center;justify-content:center;padding:16px;z-index:50}
 .pvbg[hidden]{display:none}
 .pvbox{background:var(--surface);color:var(--ink);border-radius:18px;max-width:420px;width:100%;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.28)}
@@ -505,9 +505,9 @@ function renderSale(v){
     // [YY.MM.DD] 택지지구(블록) - 동 - 아파트 이름 (택지지구가 없으면 동부터) + 오른쪽 아이콘 버튼(미리보기·바로가기)
     const head=(x.district?'<span class="tag">'+esc(x.district)+(x.block?'('+esc(x.block)+')':'')+'</span> - ':'')+(x.dong?esc(x.dong)+' - ':'');
     const i=LIST.indexOf(x);
-    const pv='<button type="button" class="ib" data-pv="'+i+'" aria-label="미리보기" title="미리보기">'+EYE+'</button>';
-    const go=x.url?'<a class="ib" href="'+esc(x.url)+'" target="_blank" rel="noopener" aria-label="바로가기" title="바로가기">'+GO+'</a>':'';
-    return '<li><span class="txt"><span class="dt">'+fmt(x.date)+'</span>'+head+esc(x.title)+'</span><span class="acts">'+pv+go+'</span></li>';};
+    const pv='<button type="button" class="pillb pv" data-pv="'+i+'" aria-label="미리보기">'+EYE+'미리보기</button>';
+    const go=x.url?'<a class="pillb go" href="'+esc(x.url)+'" target="_blank" rel="noopener" aria-label="바로가기">'+GO+'바로가기</a>':'';
+    return '<li><span class="dt">'+fmt(x.date)+'</span>'+head+esc(x.title)+pv+go+'</li>';};
   const on=mine.filter(x=>x.status==='분양중'), done=mine.filter(x=>x.status==='분양완료');
   $('saleOn').innerHTML=on.length?on.map(row).join(''):'<li class="none">아직 등록된 단지가 없어요.</li>';
   $('saleDone').innerHTML=done.length?done.map(row).join(''):'<li class="none">아직 등록된 단지가 없어요.</li>';
