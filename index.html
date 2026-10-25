@@ -546,7 +546,7 @@ window.addEventListener('resize',fitLabels);
 function fmt(d){const m=String(d||'').match(/(\d{4})-(\d{2})-(\d{2})/);return m?'['+m[1].slice(2)+'.'+m[2]+'.'+m[3]+']':''}
 const EYE='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 12S5.5 5 12 5s10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg>';
 const GO='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>';
-function rateNum(s){const m=/^(\d+(?:\.\d+)?):1$/.exec(s);if(!m)return s;const v=parseFloat(m[1]);return (v>=10?Math.round(v):Math.round(v*10)/10)+':1'}
+function rateNum(s){const m=/^(\d+(?:\.\d+)?):1$/.exec(s);if(!m)return s;const v=parseFloat(m[1]);return v.toFixed(1)+':1'}
 function rateCells(r){if(!r||r==='-')return ['-','-'];let a='-',b='-',e=[];r.split('\n').forEach(l=>{const m=/^(\S+)\s+(.+)$/.exec(l);if(!m)return;const v=rateNum(m[2]);if(m[1]==='해당')a=v;else if(m[1]==='기타')b=v;else e.push(m[1].replace(/^기타/,'')+' '+v)});if(e.length)b=(b==='-'?'':b+'<br>')+e.map(esc).join('<br>');return [esc(a),b==='-'?'-':b.indexOf('<')>=0?b:esc(b)]}
 function saleRow(x,withArea){
   // 1줄 [YY.MM.DD] 택지지구(블록) - 동 / 2줄 아파트 이름 / 3줄 미리보기·바로가기 알약
