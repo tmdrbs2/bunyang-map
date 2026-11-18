@@ -177,15 +177,15 @@
    {
     "t": "84A",
     "p": "6.03~6.91억",
-    "r": "-"
+    "r": "해당 미달\n기타 미달"
    },
    {
     "t": "84B",
     "p": "6.03~6.91억",
-    "r": "-"
+    "r": "해당 미달\n기타 미달"
    }
   ],
-  "status": "분양중",
+  "status": "분양완료",
   "url": "https://jsvirus.tistory.com/entry/%EA%B2%BD%EA%B8%B0-%EA%B4%91%EC%A3%BC-%ED%83%84%EB%B2%8CA%EC%A7%80%EA%B5%AC-A5BL-%EC%A0%9C%EC%9D%BC%ED%92%8D%EA%B2%BD%EC%B1%84-%EA%B4%91%EC%A3%BC-%ED%8F%AC%EC%97%90%EB%93%80-%EB%B6%84%EC%96%91%EA%B0%80%C2%B7%EC%B2%AD%EC%95%BD-%EC%9D%BC%EC%A0%95%C2%B7%EA%B2%AC%EB%B3%B8%EC%A3%BC%ED%83%9D%C2%B7%EC%9E%85%EC%A7%80%ED%83%84%EB%B2%8C%EC%B4%88"
  },
  {
@@ -201,25 +201,25 @@
    {
     "t": "59",
     "p": "6.03~6.37억",
-    "r": "-"
+    "r": "해당 12.00:1\n기타 -"
    },
    {
     "t": "84A",
     "p": "7.42~8.57억",
-    "r": "-"
+    "r": "해당 미달\n기타 미달"
    },
    {
     "t": "84B",
     "p": "7.25~8.37억",
-    "r": "-"
+    "r": "해당 미달\n기타 미달"
    },
    {
     "t": "84C",
     "p": "7.45~8.63억",
-    "r": "-"
+    "r": "해당 미달\n기타 미달"
    }
   ],
-  "status": "분양중",
+  "status": "분양완료",
   "url": "https://jsvirus.tistory.com/entry/%EA%B2%BD%EA%B8%B0-%EC%9D%98%EC%A0%95%EB%B6%80%EC%97%AD-%ED%8E%A0%EB%A6%AC%EC%8A%A4%ED%83%80%EC%9B%8C-%EC%96%91%EC%9A%B0%EB%82%B4%EC%95%88%EC%95%A0-%EB%B6%84%EC%96%91%EA%B0%80%C2%B7%EC%B2%AD%EC%95%BD-%EC%9D%BC%EC%A0%95%C2%B7%EA%B2%AC%EB%B3%B8%EC%A3%BC%ED%83%9D-%EC%9C%84%EC%B9%98%C2%B7%EC%9E%85%EC%A7%80%EC%97%AD-%EC%B4%9D%EC%A0%95%EB%A6%AC"
  },
  {
@@ -859,18 +859,20 @@
   "dong": "삼도이동",
   "title": "삼도이동 1지구 토지임대부 공공분양주택",
   "date": "2026-10-28",
-  "status": "분양중",
+  "status": "분양완료",
   "addr": "제주특별자치도 제주시 삼도이동 1244-1",
   "summary": "32세대 · 접수 11/16~11/18",
   "end": "2026-11-18",
   "types": [
    {
     "t": "49A",
-    "p": "최고 2.52억"
+    "p": "최고 2.52억",
+    "r": "해당 4.50:1\n기타 -"
    },
    {
     "t": "59A",
-    "p": "최고 3.02억"
+    "p": "최고 3.02억",
+    "r": "해당 2.60:1\n기타 -"
    }
   ],
   "url": "https://jsvirus.tistory.com/entry/%EC%A0%9C%EC%A3%BC-%EC%82%BC%EB%8F%84%EC%9D%B4%EB%8F%99-1%EC%A7%80%EA%B5%AC-%ED%86%A0%EC%A7%80%EC%9E%84%EB%8C%80%EB%B6%80-%EA%B3%B5%EA%B3%B5%EB%B6%84%EC%96%91%EC%A3%BC%ED%83%9D-%EB%B6%84%EC%96%91%EA%B0%80%EC%83%81%ED%95%9C%EC%A0%9C-%EB%B6%84%EC%96%91%EA%B0%80%C2%B7%ED%86%A0%EC%A7%80%EC%9E%84%EB%8C%80%EB%A3%8C%C2%B7%EC%B2%AD%EC%95%BD-%EC%9D%BC%EC%A0%95%C2%B7%ED%99%8D%EB%B3%B4%EA%B4%80-%EC%9C%84%EC%B9%98"
@@ -881,18 +883,20 @@
   "dong": "삼도이동",
   "title": "삼도이동 2지구 토지임대부 공공분양주택",
   "date": "2026-10-28",
-  "status": "분양중",
+  "status": "분양완료",
   "addr": "제주특별자치도 제주시 삼도이동 1246-1 외 4필지",
   "summary": "40세대 · 접수 11/16~11/18",
   "end": "2026-11-18",
   "types": [
    {
     "t": "49A",
-    "p": "최고 2.52억"
+    "p": "최고 2.52억",
+    "r": "해당 미달\n기타 미달"
    },
    {
     "t": "59A",
-    "p": "최고 3.02억"
+    "p": "최고 3.02억",
+    "r": "해당 1.62:1\n기타 -"
    }
   ],
   "url": "https://jsvirus.tistory.com/entry/%EC%A0%9C%EC%A3%BC-%EC%82%BC%EB%8F%84%EC%9D%B4%EB%8F%99-2%EC%A7%80%EA%B5%AC-%ED%86%A0%EC%A7%80%EC%9E%84%EB%8C%80%EB%B6%80-%EA%B3%B5%EA%B3%B5%EB%B6%84%EC%96%91-%EB%B6%84%EC%96%91%EA%B0%80%EC%83%81%ED%95%9C%EC%A0%9C-%EB%B6%84%EC%96%91%EA%B0%80%C2%B7%ED%86%A0%EC%A7%80%EC%9E%84%EB%8C%80%EB%A3%8C%C2%B7%EC%B2%AD%EC%95%BD-%EC%9D%BC%EC%A0%95%C2%B7%ED%99%8D%EB%B3%B4%EA%B4%80-%EC%9C%84%EC%B9%98"
@@ -1079,7 +1083,7 @@
   "dong": "거모동",
   "title": "시흥거모지구 S-1블록 공공분양",
   "date": "2026-10-23",
-  "status": "분양중",
+  "status": "분양완료",
   "url": "https://jsvirus.tistory.com/entry/%EC%8B%9C%ED%9D%A5%EA%B1%B0%EB%AA%A8%EC%A7%80%EA%B5%AC-S-1BL-%EA%B3%B5%EA%B3%B5%EB%B6%84%EC%96%91-%EB%B6%84%EC%96%91%EA%B0%80%C2%B7%EC%B2%AD%EC%95%BD-%EC%9D%BC%EC%A0%95%C2%B7%EC%86%8C%EB%93%9D%EA%B8%B0%EC%A4%80%C2%B7%EC%9E%85%EC%A7%80%EC%8B%A0%EA%B8%B8%EC%98%A8%EC%B2%9C%EC%97%AD-%EC%B4%9D%EC%A0%95%EB%A6%AC",
   "addr": "경기도 시흥시 거모동, 군자동 일원 시흥거모 공공주택지구 내 S-1블록",
   "summary": "300세대 · 특별공급 11/2 · 접수 마감 11/17 · 분양가상한제 적용",
